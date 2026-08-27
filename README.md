@@ -15,14 +15,25 @@
 ## 2. Workflow Overview
 
 ```mermaid
-flowchart TD
-  A[Idea] --> B[Requirement clarification] --> C[PRD]
-  C --> D[UX design] --> E[Prototype spec] --> F[Clickable prototype]
-  F --> G[Prototype validation] --> H[Human decision gate] --> I[Scope freeze]
-  I --> J[Implementation planning] --> K[Implementation] --> L[Automated QA]
-  L --> M[Release candidate] --> N[Human release gate] --> O[Production deployment]
-  O --> P[Production validation] --> Q[Retrospective] --> R[Next iteration]
-  R -.-> B
+graph TD
+  A[Idea] --> B[Requirement clarification]
+  B --> C[PRD]
+  C --> D[UX design]
+  D --> E[Prototype spec]
+  E --> F[Clickable prototype]
+  F --> G[Prototype validation]
+  G --> H[Human decision gate]
+  H --> I[Scope freeze]
+  I --> J[Implementation planning]
+  J --> K[Implementation]
+  K --> L[Automated QA]
+  L --> M[Release candidate]
+  M --> N[Human release gate]
+  N --> O[Production deployment]
+  O --> P[Production validation]
+  P --> Q[Retrospective]
+  Q --> R[Next iteration]
+  R --> B
 ```
 
 详细流程由下面的原则、Stage Contract、Gate、Protocol 和证据模型共同定义。阶段名称可以按项目规模合并，但高风险决策点不能因为 AI 执行速度更快而被省略。
