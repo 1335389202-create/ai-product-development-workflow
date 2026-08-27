@@ -15,37 +15,14 @@
 ## 2. Workflow Overview
 
 ```mermaid
-flowchart TB
-  subgraph Discover["1 · Discover"]
-    direction LR
-    D1["Idea"] --> D2["Requirement clarification"] --> D3["PRD"]
-  end
-
-  subgraph Design["2 · Design and validate"]
-    direction LR
-    X1["UX design"] --> X2["Prototype spec"] --> X3["Clickable prototype"] --> X4["Prototype validation"]
-  end
-
-  subgraph Plan["3 · Decide and freeze"]
-    direction LR
-    G1["Human decision gate"] --> G2["Scope freeze"] --> G3["Implementation planning"]
-  end
-
-  subgraph Build["4 · Build and verify"]
-    direction LR
-    B1["Implementation"] --> B2["Automated QA"] --> B3["Release candidate"] --> B4["Human release gate"]
-  end
-
-  subgraph Learn["5 · Release and learn"]
-    direction LR
-    R1["Production deployment"] --> R2["Production validation"] --> R3["Retrospective"] --> R4["Next iteration"]
-  end
-
-  D3 --> X1
-  X4 --> G1
-  G3 --> B1
-  B4 --> R1
-  R4 -. "new evidence" .-> D2
+flowchart TD
+  A[Idea] --> B[Requirement clarification] --> C[PRD]
+  C --> D[UX design] --> E[Prototype spec] --> F[Clickable prototype]
+  F --> G[Prototype validation] --> H[Human decision gate] --> I[Scope freeze]
+  I --> J[Implementation planning] --> K[Implementation] --> L[Automated QA]
+  L --> M[Release candidate] --> N[Human release gate] --> O[Production deployment]
+  O --> P[Production validation] --> Q[Retrospective] --> R[Next iteration]
+  R -.-> B
 ```
 
 详细流程由下面的原则、Stage Contract、Gate、Protocol 和证据模型共同定义。阶段名称可以按项目规模合并，但高风险决策点不能因为 AI 执行速度更快而被省略。
