@@ -33,7 +33,6 @@ graph TD
   O --> P[Production validation]
   P --> Q[Retrospective]
   Q --> R[Next iteration]
-  R --> B
 ```
 
 详细流程由下面的原则、Stage Contract、Gate、Protocol 和证据模型共同定义。阶段名称可以按项目规模合并，但高风险决策点不能因为 AI 执行速度更快而被省略。
