@@ -2,7 +2,7 @@
 
 All notable changes to this repository are documented in this file.
 
-## [1.1.0] — Unreleased
+## [1.1.0] - 2026-08-27
 
 ### Changed
 
