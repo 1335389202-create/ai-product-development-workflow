@@ -15,7 +15,7 @@
 ## 2. Workflow Overview
 
 ```mermaid
-flowchart LR
+flowchart TD
   A[Discover] --> B[Design]
   B --> C[Validate]
   C --> D[Build]
