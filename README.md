@@ -14,22 +14,7 @@
 
 ## 2. Workflow Overview
 
-```mermaid
-flowchart TD
-
-  discover[Discover]
-  design[Design]
-  validate[Validate]
-  build[Build]
-  release[Release]
-  learn[Learn]
-
-  discover -- Leads to --> design
-  design -- Leads to --> validate
-  validate -- Leads to --> build
-  build -- Leads to --> release
-  release -- Leads to --> learn
-```
+![AI Product Development Workflow overview](assets/workflow-overview.svg)
 
 Discover 包含 Idea → Requirement Clarification → PRD；Design 包含 UX Design → Prototype Spec → Clickable Prototype；Validate 包含 Prototype Validation → Human Decision Gate → Scope Freeze；Build 包含 Implementation Planning → Implementation → Automated QA；Release 包含 Release Candidate → Human Release Gate → Production Deployment；Learn 包含 Production Validation → Retrospective → Next Iteration，并把新证据带回下一轮需求澄清。
 
