@@ -16,7 +16,11 @@
 
 ```mermaid
 flowchart LR
-  A[Discover] --> B[Design] --> C[Validate] --> D[Build] --> E[Release] --> F[Learn]
+  A[Discover] --> B[Design]
+  B --> C[Validate]
+  C --> D[Build]
+  D --> E[Release]
+  E --> F[Learn]
 ```
 
 Discover 包含 Idea → Requirement Clarification → PRD；Design 包含 UX Design → Prototype Spec → Clickable Prototype；Validate 包含 Prototype Validation → Human Decision Gate → Scope Freeze；Build 包含 Implementation Planning → Implementation → Automated QA；Release 包含 Release Candidate → Human Release Gate → Production Deployment；Learn 包含 Production Validation → Retrospective → Next Iteration，并把新证据带回下一轮需求澄清。
